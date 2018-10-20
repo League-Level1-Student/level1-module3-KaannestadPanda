@@ -19,7 +19,19 @@ public class Backpack
 
 	public static void main(String[] args)
 	{
-		new Backpack().packAndCheck();
+		
+		Backpack a=new Backpack();
+		
+		
+		Pencil pencil = new Pencil();
+		Ruler ruler=new Ruler();
+		Textbook textbook= new Textbook();
+		textbook.read();
+	a.putInBackpack(pencil);
+	a.putInBackpack(ruler);
+	a.putInBackpack(textbook);
+	a.putInBackpack(pencil);
+	a.packAndCheck();
 	}
 
 	public void putInBackpack(Pencil supply)
